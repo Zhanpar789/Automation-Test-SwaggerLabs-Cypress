@@ -17,7 +17,7 @@ module.exports = defineConfig({
 
       return config;
     },
-    specPattern: "swager-labs-demo/test/**/*.feature",
+    specPattern: "swager-labs-demo/test/features/**",
   },
 });
 
