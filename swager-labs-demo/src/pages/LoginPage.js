@@ -1,4 +1,4 @@
-class LoginPage {
+export class LoginPage {
     urlLoginPage(){
          cy.visit('https://www.saucedemo.com/');
     }
