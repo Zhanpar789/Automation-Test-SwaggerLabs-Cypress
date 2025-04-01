@@ -1,6 +1,6 @@
 export class LoginPage {
     urlLoginPage(){
-         cy.visit('https://www.saucedemo.com/');
+         cy.visit("https://www.saucedemo.com/");
     }
     get labeLoginPage(){
         return cy.get('[class="login_logo"]').contains('Swag Labs');
