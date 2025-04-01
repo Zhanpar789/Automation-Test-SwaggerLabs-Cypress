@@ -7,4 +7,4 @@ Feature: Login feature
         When User Input Valid Username
         And User Input Valid Password
         And User click Button Login
-        Then User Success Login to SauceDemos   
+        Then User Success Login to SauceDemo
