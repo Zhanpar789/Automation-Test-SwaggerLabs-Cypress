@@ -16,7 +16,7 @@ When('User Input {string} Valid Username', (username) => {
 });
 
 When('User Input {string} Valid Password', (password) => {
-    loginPage.clickUsernameField();
+    loginPage.clickPasswordField();
     cy.wait(2000);
     loginPage.fillPasswordField(password);
 });
@@ -37,7 +37,7 @@ When('User Input Invalid Username', () => {
 });
 
 When('User Input Invalid Password', () => {
-    loginPage.clickUsernameField();
+    loginPage.clickPasswordField();
     cy.wait(2000);
     loginPage.fillWrongPasswordField();
 });
