@@ -15,8 +15,8 @@ export class LoginPage {
     clickUsernameField(){
         this.usernameField.click();
     }
-    fillUsernameField(){
-        this.usernameField.type('standard_user');
+    fillUsernameField(username){
+        this.usernameField.type(username);
     }
 
     get passwordField(){
@@ -25,8 +25,8 @@ export class LoginPage {
     clickPasswordField(){
         this.passwordField.click();
     }
-    fillPasswordField(){
-        this.passwordField.type('secret_sauce');
+    fillPasswordField(password){
+        this.passwordField.type(password);
     }
 
     get buttonLogin(){

@@ -1,4 +1,4 @@
-import { Given, When, Then, } from "@badeball/cypress-cucumber-preprocessor";
+import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import { LoginPage } from "../../src/pages/LoginPage";
 import { ProductPage } from "../../src/pages/ProductPage";
 
@@ -9,16 +9,16 @@ Given('User access to SauceDemo', () => {
     loginPage.urlLoginPage();
 }); 
 
-When('User Input Valid Username', () => {
+When('User Input {string} Valid Username', (username) => {
     loginPage.clickUsernameField();
     cy.wait(2000);
-    loginPage.fillUsernameField();
+    loginPage.fillUsernameField(username);
 });
 
-When('User Input Valid Password', () => {
+When('User Input {string} Valid Password', (password) => {
     loginPage.clickUsernameField();
     cy.wait(2000);
-    loginPage.fillPasswordField();
+    loginPage.fillPasswordField(password);
 });
 
 When('User click Button Login', () => {
