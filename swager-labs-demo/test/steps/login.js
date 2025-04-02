@@ -30,3 +30,19 @@ Then('User Success Login to SauceDemo', () => {
     productPage.verifyTittleProductPage();
 });
 
+When('User Input Invalid Username', () => {
+    loginPage.clickUsernameField();
+    cy.wait(2000);
+    loginPage.fillWrongUsernameField();
+});
+
+When('User Input Invalid Password', () => {
+    loginPage.clickUsernameField();
+    cy.wait(2000);
+    loginPage.fillWrongPasswordField();
+});
+
+Then('User Failed Login to SauceDemo', () => {
+    loginPage.verifyFailedLoginMessage();
+});
+

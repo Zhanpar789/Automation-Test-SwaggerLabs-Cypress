@@ -18,6 +18,9 @@ export class LoginPage {
     fillUsernameField(username){
         this.usernameField.type(username);
     }
+    fillWrongUsernameField(){
+        this.usernameField.type('zhanpar_automation');
+    }
 
     get passwordField(){
         return cy.get('[data-test="password"]');
@@ -27,6 +30,17 @@ export class LoginPage {
     }
     fillPasswordField(password){
         this.passwordField.type(password);
+    }
+    fillWrongPasswordField(){
+        this.usernameField.type('wrong_password');
+    }
+
+    get failedLoginMessage(){
+      return  cy.get('[data-test="error-button"]').contains('Epic sadface: Username and password do not match any user in this service');
+    }
+
+    verifyFailedLoginMessage(){
+        this.failedLoginMessage.should('be.visible');
     }
 
     get buttonLogin(){
