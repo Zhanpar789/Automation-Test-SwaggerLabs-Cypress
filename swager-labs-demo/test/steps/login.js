@@ -27,6 +27,6 @@ When('User click Button Login', () => {
 });
 
 Then('User Success Login to SauceDemo', () => {
-    productPage.urlProductPage();
+    productPage.verifyTittleProductPage();
 });
 
