@@ -32,11 +32,11 @@ export class LoginPage {
         this.passwordField.type(password);
     }
     fillWrongPasswordField(){
-        this.usernameField.type('wrong_password');
+        this.passwordField.type('wrong_password');
     }
 
     get failedLoginMessage(){
-      return  cy.get('[data-test="error-button"]').contains('Epic sadface: Username and password do not match any user in this service');
+      return  cy.contains('Epic sadface: Username and password do not match any user in this service');
     }
 
     verifyFailedLoginMessage(){

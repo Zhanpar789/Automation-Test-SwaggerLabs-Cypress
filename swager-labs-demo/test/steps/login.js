@@ -23,7 +23,7 @@ When('User Input {string} Valid Password', (password) => {
 
 When('User click Button Login', () => {
     loginPage.clickButtonLogin();
-    cy.wait(2000);
+    cy.wait(1000);
 });
 
 Then('User Success Login to SauceDemo', () => {
