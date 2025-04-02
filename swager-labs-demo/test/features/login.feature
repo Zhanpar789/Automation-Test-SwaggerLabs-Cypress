@@ -15,3 +15,11 @@ Feature: Login feature
         | problem_user  | secret_sauce   |
         | error_user    | secret_sauce   |
         | visual_user   | secret_sauce   |
+
+    Scenario Outline: User Login with Invalid Credentials
+        When User Input Invalid Username
+        And User Input Invalid Password
+        And User click Button Login 
+        Then User Failed Login to SauceDemo
+        
+            
