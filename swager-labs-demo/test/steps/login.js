@@ -6,7 +6,7 @@ const loginPage = new LoginPage();
 const productPage = new ProductPage();
 
 Given('User access to SauceDemo', () => {
-    loginPage.urlLoginPage();
+    cy.visit(`${Cypress.env('sauce_demo')}`);
 }); 
 
 When('User Input {string} Valid Username', (username) => {
