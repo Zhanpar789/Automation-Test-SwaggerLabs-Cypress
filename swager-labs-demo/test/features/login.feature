@@ -26,7 +26,7 @@ Feature: Login feature
         When User Input "locked_out_user" Valid Username    
         And User Input "<password>" Valid Password
         And User click Button Login
-        Then User Will See Locked Out Message
+        Then User will see Locked Out Message
 
       Examples: 
         | password     |

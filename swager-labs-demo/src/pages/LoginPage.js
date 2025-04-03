@@ -36,11 +36,17 @@ export class LoginPage {
     }
 
     get failedLoginMessage(){
-      return  cy.contains('Epic sadface: Username and password do not match any user in this service');
+      return cy.contains('Epic sadface: Username and password do not match any user in this service');
     }
-
     verifyFailedLoginMessage(){
         this.failedLoginMessage.should('be.visible');
+    }
+
+    get lockedOutLoginMessage(){
+        return cy.contains('Epic sadface: Sorry, this user has been locked out');
+    }
+    verifyLockedOutLoginMessage(){
+        this.lockedOutLoginMessage.should('be.visible')
     }
 
     get buttonLogin(){

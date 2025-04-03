@@ -46,3 +46,7 @@ Then('User Failed Login to SauceDemo', () => {
     loginPage.verifyFailedLoginMessage();
 });
 
+Then('User will see Locked Out Message', () => {
+    loginPage.verifyLockedOutLoginMessage();
+})
+
