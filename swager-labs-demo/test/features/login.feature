@@ -21,5 +21,14 @@ Feature: Login feature
         And User Input Invalid Password
         And User click Button Login 
         Then User Failed Login to SauceDemo
-        
+
+    Scenario Outline: User Login with Locked Out User
+        When User Input "locked_out_user" Valid Username    
+        And User Input "<password>" Valid Password
+        And User click Button Login
+        Then User Will See Locked Out Message
+
+      Examples: 
+        | password     |
+        | secret_sauce |  
             
