@@ -20,6 +20,9 @@ export class ProductPage {
     clickAddToCartProductBackpack(){
         this.productBackpack.click();
     }
+    verifyProductBackpackRemoved(){
+        this.productBackpackRemoved.should('be.visible');
+    }
 
     get productTshirt(){
         return cy.get('[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]');
@@ -31,6 +34,9 @@ export class ProductPage {
 
     clickAddToCartProductTshirt(){
         this.productTshirt.click();
+    }
+    verifyProductTshirtRemoved(){
+        this.productTshirtRemoved.should('be.visible');
     }
 
     get productBikeLight(){
@@ -44,6 +50,9 @@ export class ProductPage {
     clickAddToCartProductBikeLight(){
         this.productBikeLight.click();
     }
+    verifyProductBikeLightRemoved(){
+        this.productBikeLightRemoved.should('be.visible');
+    }
 
     get productFleeceJacket(){
         return cy.get('[data-test="add-to-cart-sauce-labs-fleece-jacket"]');
@@ -54,6 +63,9 @@ export class ProductPage {
 
     clickAddToCartProductFleeceJacket(){
         this.productFleeceJacket.click();
+    }
+    verifyProductFleeceJacketRemoved(){
+        this.productFleeceJacketRemoved.should('be.visible')
     }
 
     get productOnesie(){
@@ -67,6 +79,9 @@ export class ProductPage {
     clickAddToCartProductOnesie(){
         this.productOnesie.click();
     }
+    verifyProductOnesieRemoved(){
+        this.productOnesieRemoved.should('be.visible');
+    }
 
     get productTshirtRed(){
         return cy.get('[data-test="add-to-cart-test.allthethings()-t-shirt-(red)"]');
@@ -78,6 +93,9 @@ export class ProductPage {
 
     clickAddToCartProductTshirtRed(){
         this.productTshirtRed.click();
+    }
+    verifyProductTshirtRedRemoved(){
+        this.productTshirtRedRemoved.should('be.visible');
     }
 
 }
