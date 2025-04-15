@@ -73,7 +73,7 @@ export class ProductPage {
     }
 
     get productOnesieRemoved(){
-        return cy.get('[ddata-test="remove-sauce-labs-onesie"]');
+        return cy.get('[data-test="remove-sauce-labs-onesie"]');
     }
 
     clickAddToCartProductOnesie(){
