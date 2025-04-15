@@ -4,8 +4,7 @@ import { ProductPage } from "../../src/pages/ProductPage";
 const productPage = new ProductPage();
 
 Given ('User at Product Page', () => {
-    cy.visit(`${Cypress.env("sauce_demo")}/inventory.html`);
-    cy.wait(1000); 
+    cy.login();
 })
 
 When ('User Add To Cart Product BackPack', () => {
