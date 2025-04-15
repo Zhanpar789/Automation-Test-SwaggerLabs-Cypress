@@ -51,6 +51,6 @@ When ('User Add To Cart Product T-Shirt Red', () => {
     productPage.clickAddToCartProductTshirtRed();
 });
 
-Then ('User Will See T-Shirt REd Add To Cart', () => {
+Then ('User Will See T-Shirt Red Add To Cart', () => {
     productPage.verifyProductTshirtRedRemoved();
 })
