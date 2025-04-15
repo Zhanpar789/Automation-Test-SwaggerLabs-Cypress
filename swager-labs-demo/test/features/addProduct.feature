@@ -16,4 +16,9 @@ Feature: Login feature
         | Onesie           |
         | T-Shirt Red      |
 
+    Scenario: User adds all products to cart 
+        When User adds all products to cart
+        Then User sees all products are added to cart
+            
+
 
