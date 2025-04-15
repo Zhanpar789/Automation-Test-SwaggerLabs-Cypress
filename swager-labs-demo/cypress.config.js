@@ -18,7 +18,7 @@ module.exports = defineConfig({
       return config;
     },
     specPattern: "swager-labs-demo/test/features/**/*.feature",
-    supportFile: "swager-labs-demo/src/cypress/support/e2e.js", // ✅ FIXED
+    supportFile: "swager-labs-demo/cypress/support/e2e.js",
     env: {
       stepDefinitions: "swager-labs-demo/test/steps/**/*.js",
     },
