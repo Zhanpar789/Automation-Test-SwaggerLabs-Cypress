@@ -34,6 +34,12 @@ export class ProductPage {
         });
     }
 
+    removeAllProduct(){
+        Object.values(this.productData).forEach((testId) => {
+            cy.get(`[data-test="remove-${testId}"]`).click();
+        });
+    }
+
     verifyAllProductsAdded() {
         Object.values(this.productData).forEach((testId) => {
             cy.get(`[data-test="remove-${testId}"]`).should('be.visible');
