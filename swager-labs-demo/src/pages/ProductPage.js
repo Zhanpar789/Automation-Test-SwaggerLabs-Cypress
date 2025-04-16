@@ -33,6 +33,11 @@ export class ProductPage {
         cy.get(`[data-test="remove-${testId}"]`).should('be.visible');
     }
 
+    verifyProductRemoved(){
+        const testId = this.productData[productName];
+        cy.get(`[data-test="add-to-cart-${testId}"]`).should('be.visible');
+    }
+
     addAllProductToCart() {
         Object.values(this.productData).forEach((testId) => {
             cy.get(`[data-test="add-to-cart-${testId}"]`).click();
@@ -50,6 +55,7 @@ export class ProductPage {
             cy.get(`[data-test="remove-${testId}"]`).should('be.visible');
         });
     }
+
     
 
 }
