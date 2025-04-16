@@ -23,6 +23,11 @@ export class ProductPage {
         cy.get(`[data-test="add-to-cart-${testId}"]`).click();
     }
 
+    removeOneOfProduct(){
+        const testId = this.productData[productName];
+        cy.get(`[data-test="remove-${testId}"]`).click();
+    }
+
     verifyProductAdded(productName) {
         const testId = this.productData[productName];
         cy.get(`[data-test="remove-${testId}"]`).should('be.visible');
