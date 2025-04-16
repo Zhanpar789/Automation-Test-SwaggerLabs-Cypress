@@ -11,3 +11,7 @@ Given ('all Product add to cart', () => {
 When ('User Remove {string} Product', () => {
     productPage.removeOneOfProduct();
 });
+
+When ('User Remove all Product', () => {
+    productPage.removeAllProduct();
+}); 
