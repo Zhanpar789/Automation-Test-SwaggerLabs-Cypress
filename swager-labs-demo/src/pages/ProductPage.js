@@ -55,6 +55,11 @@ export class ProductPage {
             cy.get(`[data-test="remove-${testId}"]`).should('be.visible');
         });
     }
+    verifyAllProductsRemoved() {
+        Object.values(this.productData).forEach((testId) => {
+            cy.get(`[data-test="add-to-cart-${testId}"]`).should('be.visible');
+        });
+    }
 
     
 
