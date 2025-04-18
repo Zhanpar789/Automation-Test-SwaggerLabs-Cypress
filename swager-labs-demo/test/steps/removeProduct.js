@@ -8,7 +8,7 @@ Given ('all Product add to cart', () => {
     productPage.addAllProductToCart();
 });
 
-When ('User Remove {string} Product', () => {
+When ('User Remove {string} from cart', () => {
     productPage.removeOneOfProduct();
 });
 
