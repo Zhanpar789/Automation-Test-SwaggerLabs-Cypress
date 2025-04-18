@@ -16,3 +16,7 @@ Feature: Remove All Product
         | Fleece Jacket    |
         | Onesie           |
         | T-Shirt Red      |
+
+    Scenario Outline: User Remove All Product
+        Given all Product add to cart
+        When User Remove all product  d
