@@ -9,7 +9,13 @@ Given ('all Product add to cart', () => {
 });
 
 When ('User Remove {string} from cart', (Product) => {
+    cy.wait(1000);
     productPage.removeOneOfProduct(Product);
+});
+
+Then ('User will see Product {string} Removed', (Product) => {
+    cy.wait(1000);
+    productPage.verifyProductRemoved(Product);
 });
 
 When ('User Remove all Product', () => {

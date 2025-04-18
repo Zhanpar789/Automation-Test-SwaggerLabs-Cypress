@@ -6,6 +6,7 @@ Feature: Remove All Product
     Scenario Outline: User Remove one of Product
         Given all Product add to cart
         When User Remove "<Product>" from cart
+        Then User will see Product "<Product>" Removed
 
         Examples:
         | Product          |
