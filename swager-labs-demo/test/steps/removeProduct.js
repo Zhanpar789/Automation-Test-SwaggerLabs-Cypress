@@ -23,5 +23,5 @@ When ('User Remove all Product', () => {
 }); 
 
 Then ('User will see all Product Removed', () => {
-    productPage.removeAllProduct();
+    productPage.verifyAllProductsRemoved();
 });
