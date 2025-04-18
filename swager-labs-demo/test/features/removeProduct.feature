@@ -8,10 +8,10 @@ Feature: Remove All Product
         When User Remove "<Product>" from cart
 
         Examples:
-        | product          |
+        | Product          |
         | Backpack         |
         | T-Shirt          |
         | Bike Light       |
         | Fleece Jacket    |
         | Onesie           |
-        | T-Shirt Red      |     
+        | T-Shirt Red      |
