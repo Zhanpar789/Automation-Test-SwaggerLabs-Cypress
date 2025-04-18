@@ -20,3 +20,4 @@ Feature: Remove All Product
     Scenario Outline: User Remove All Product
         Given all Product add to cart
         When User Remove all Product
+        Then User will see all Product Removed

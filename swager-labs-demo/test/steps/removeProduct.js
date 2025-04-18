@@ -21,3 +21,7 @@ Then ('User will see Product {string} Removed', (Product) => {
 When ('User Remove all Product', () => {
     productPage.removeAllProduct();
 }); 
+
+Then ('User will see all Product Removed', () => {
+    productPage.removeAllProduct();
+});
