@@ -61,6 +61,12 @@ export class ProductPage {
         });
     }
 
+    get shoopingCartIcon(){
+        return cy.get('[data-test="shopping-cart-link"]')
+    }
+    clickShoopingCartIcon(){
+        this.shoopingCartIcon.click();
+    }
     
 
 }
