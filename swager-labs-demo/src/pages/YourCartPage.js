@@ -19,4 +19,14 @@ export class YourCartPage {
     clickButtonContinueShooping(){
         this.buttonContinueShooping.click();
     }
+
+    get buttonCheckout(){
+        return cy.get('[data-test="checkout"]');
+    }
+    verifyButtonCheckout(){
+        this.buttonCheckout.should('be.visible');
+    }
+    clickButtonCheckout(){
+        this.buttonCheckout.click();
+    }
 }
