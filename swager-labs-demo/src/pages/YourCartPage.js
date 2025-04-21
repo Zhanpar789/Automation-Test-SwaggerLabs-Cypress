@@ -9,4 +9,14 @@ export class YourCartPage {
     verifyLabelYourCartPage(){
         this.labelYourCartPage.should('be.visible');
     }
+
+    get buttonContinueShooping(){
+        return cy.get('[data-test="continue-shopping"]');
+    }
+    verifyButtonContinueShooping(){
+        this.buttonContinueShooping.should('be.visible');
+    }
+    clickButtonContinueShooping(){
+        this.buttonContinueShooping.click();
+    }
 }
