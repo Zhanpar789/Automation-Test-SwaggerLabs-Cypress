@@ -103,4 +103,11 @@ export class ProductPage {
         this.sauceLabsOneSie.click();
     }
 
+    get sauceLabsTshirtRed(){
+        return cy.get('[data-test="inventory-item-name"]');
+    }
+    clickSauceLabsTshirtRed(){
+        this.sauceLabsTshirtRed.click();
+    }
+
 }
