@@ -75,4 +75,11 @@ export class ProductPage {
         this.sauceLabsBackpack.click();
     }
 
+    get sauceLabsBikeLight(){
+        return cy.get('[data-test="inventory-item-name"]');
+    }
+    clickSauceLabsBikeLight(){
+        this.sauceLabsBikeLight.click();
+    }
+
 }
