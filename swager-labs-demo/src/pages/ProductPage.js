@@ -69,7 +69,7 @@ export class ProductPage {
     }
     
     get sauceLabsBackpack(){
-        return cy.get('data-test="inventory-item-name"');
+        return cy.get('[data-test="inventory-item-name]"');
     }
     clickSauceLabsBackpack(){
         this.sauceLabsBackpack.click();
