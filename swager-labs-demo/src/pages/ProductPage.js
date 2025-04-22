@@ -96,6 +96,11 @@ export class ProductPage {
         this.sauceLabsFleeceJacket.click();
     }
 
-    
+    get sauceLabsOneSie(){
+        return cy.get('[data-test="inventory-item-name"]');
+    }
+    clickSauceLabsOneSie(){
+        this.sauceLabsOneSie.click();
+    }
 
 }
