@@ -110,4 +110,23 @@ export class ProductPage {
         this.sauceLabsTshirtRed.click();
     }
 
+    get imgBackpack(){
+        return cy.get('data-test="item-4-img-link"');
+    }
+    get imgBikeLight(){
+        return cy.get('data-test="inventory-item-sauce-labs-bike-light-img"');
+    }
+    get imgBoltTshirt(){
+        return cy.get('data-test="inventory-item-sauce-labs-bike-light-img"');
+    }
+    get imgFleeceJacket(){
+        return cy.get('data-test="inventory-item-sauce-labs-fleece-jacket-img"');
+    }
+    get imgOneSie(){
+        return cy.get('data-test="inventory-item-sauce-labs-onesie-img"');
+    }
+    get imgTshirtRed(){
+        return cy.get('data-test="inventory-item-test.allthethings()-t-shirt-(red)-img"');
+    }
+
 }
