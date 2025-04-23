@@ -111,7 +111,7 @@ export class ProductPage {
     }
 
     get imgBackpack(){
-        return cy.get('data-test="item-4-img-link"');
+        return cy.get('data-test="inventory-item-sauce-labs-backpack-img"');
     }
     get imgBikeLight(){
         return cy.get('data-test="inventory-item-sauce-labs-bike-light-img"');
