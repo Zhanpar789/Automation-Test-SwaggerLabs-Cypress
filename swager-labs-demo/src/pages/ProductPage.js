@@ -111,22 +111,22 @@ export class ProductPage {
     }
 
     get imgBackpack(){
-        return cy.get('data-test="inventory-item-sauce-labs-backpack-img"');
+        return cy.get('[data-test="inventory-item-sauce-labs-backpack-img"]');
     }
     get imgBikeLight(){
-        return cy.get('data-test="inventory-item-sauce-labs-bike-light-img"');
+        return cy.get('[data-test="inventory-item-sauce-labs-bike-light-img"]');
     }
     get imgBoltTshirt(){
-        return cy.get('data-test="inventory-item-sauce-labs-bike-light-img"');
+        return cy.get('[data-test="inventory-item-sauce-labs-bike-light-img"]');
     }
     get imgFleeceJacket(){
-        return cy.get('data-test="inventory-item-sauce-labs-fleece-jacket-img"');
+        return cy.get('[data-test="inventory-item-sauce-labs-fleece-jacket-img"]');
     }
     get imgOneSie(){
-        return cy.get('data-test="inventory-item-sauce-labs-onesie-img"');
+        return cy.get('[data-test="inventory-item-sauce-labs-onesie-img"]');
     }
     get imgTshirtRed(){
-        return cy.get('data-test="inventory-item-test.allthethings()-t-shirt-(red)-img"');
+        return cy.get('[data-test="inventory-item-test.allthethings()-t-shirt-(red)-img"]');
     }
 
 }
