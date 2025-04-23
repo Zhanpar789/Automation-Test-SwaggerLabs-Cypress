@@ -69,42 +69,42 @@ export class ProductPage {
     }
     
     get sauceLabsBackpack(){
-        return cy.get('[data-test="inventory-item-name]"');
+        return cy.get('[data-test="inventory-item-name]"').contains('Sauce Labs Backpack');
     }
     clickSauceLabsBackpack(){
         this.sauceLabsBackpack.click();
     }
 
     get sauceLabsBikeLight(){
-        return cy.get('[data-test="inventory-item-name"]');
+        return cy.get('[data-test="inventory-item-name"]').contains('Sauce Labs Bike Light');
     }
     clickSauceLabsBikeLight(){
         this.sauceLabsBikeLight.click();
     }
 
     get sauceLabsBoltTshirt(){
-        return cy.get('[data-test="inventory-item-name"]');
+        return cy.get('[data-test="inventory-item-name"]').contains('Sauce Labs Bolt T-Shirt');
     }
     clickSauceLabsBoltTshirt(){
         this.sauceLabsBoltTshirt.click();
     }
 
     get sauceLabsFleeceJacket(){
-        return cy.get('[data-test="inventory-item-name"]');
+        return cy.get('[data-test="inventory-item-name"]').contains('Sauce Labs Fleece Jacket');
     }
     clickSauceLabsFleeceJacket(){
         this.sauceLabsFleeceJacket.click();
     }
 
     get sauceLabsOneSie(){
-        return cy.get('[data-test="inventory-item-name"]');
+        return cy.get('[data-test="inventory-item-name"]').contains('Sauce Labs Onesie');
     }
     clickSauceLabsOneSie(){
         this.sauceLabsOneSie.click();
     }
 
     get sauceLabsTshirtRed(){
-        return cy.get('[data-test="inventory-item-name"]');
+        return cy.get('[data-test="inventory-item-name"]').contains('Test.allTheThings() T-Shirt (Red)');
     }
     clickSauceLabsTshirtRed(){
         this.sauceLabsTshirtRed.click();
