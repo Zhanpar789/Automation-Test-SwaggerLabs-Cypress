@@ -113,20 +113,41 @@ export class ProductPage {
     get imgBackpack(){
         return cy.get('[data-test="inventory-item-sauce-labs-backpack-img"]');
     };
+    clickImgBackpack(){
+        this.imgBackpack.click();
+    }
+
     get imgBikeLight(){
         return cy.get('[data-test="inventory-item-sauce-labs-bike-light-img"]');
     };
+    clickImgBikeLight(){
+        this.imgBikeLight.click();
+    }
     get imgBoltTshirt(){
         return cy.get('[data-test="inventory-item-sauce-labs-bike-light-img"]');
     };
+    clickImgBoltTshirt(){
+        this.imgBoltTshirt.click();
+    }
     get imgFleeceJacket(){
         return cy.get('[data-test="inventory-item-sauce-labs-fleece-jacket-img"]');
     };
+    clickImgFleeceJacket(){
+        this.imgFleeceJacket.click();
+    }
+
     get imgOneSie(){
         return cy.get('[data-test="inventory-item-sauce-labs-onesie-img"]');
     };
+    clickImgOne(){
+        this.imgOneSie.click();
+    }
+
     get imgTshirtRed(){
         return cy.get('[data-test="inventory-item-test.allthethings()-t-shirt-(red)-img"]');
     };
+    clickImgTshirtRed(){
+        this.imgTshirtRed.click();
+    }
 
 }
