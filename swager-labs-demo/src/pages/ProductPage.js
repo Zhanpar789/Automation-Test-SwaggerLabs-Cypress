@@ -150,4 +150,15 @@ export class ProductPage {
         this.imgTshirtRed.click();
     }
 
+    get filterProduct(){
+        return cy.get('[data-test="product-sort-container"]');
+    }
+    clickFilterProduct(){
+        this.filterProduct.click();
+    }
+    selectFilterProduct(Filter){
+        this.filterProduct.click()
+        this.filterProduct.contains('option', Filter);
+    }
+
 }
