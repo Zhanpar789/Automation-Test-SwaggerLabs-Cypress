@@ -153,9 +153,6 @@ export class ProductPage {
     get filterProduct(){
         return cy.get('[data-test="product-sort-container"]');
     }
-    clickFilterProduct(){
-        this.filterProduct.click();
-    }
     selectFilterProduct(Filter){
         this.filterProduct.select(Filter);
     }

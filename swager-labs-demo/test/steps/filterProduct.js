@@ -3,10 +3,6 @@ import { ProductPage } from "../../src/pages/ProductPage";
 
 const productPage = new ProductPage();
 
-When('User click filter Product', () => {
-    productPage.clickFilterProduct();
-});
-
 When('User select filter Product to {string}', (Filter) => {
     cy.wait(1000);
     productPage.selectFilterProduct(Filter);
