@@ -157,8 +157,10 @@ export class ProductPage {
         this.filterProduct.click();
     }
     selectFilterProduct(Filter){
-        this.filterProduct.click()
-        this.filterProduct.contains('option', Filter);
+        this.filterProduct.select(Filter);
+    }
+    verifyFilterSelected(Filter){
+        this.filterProduct.contains(Filter)
     }
 
 }
