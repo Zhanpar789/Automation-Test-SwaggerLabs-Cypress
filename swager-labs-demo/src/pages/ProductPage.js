@@ -1,4 +1,11 @@
 export class ProductPage {
+    get primaryHeader(){
+        return cy.get('[data-test="primary-header"]');
+    }
+    verifyPrimaryHeader(){
+        this.primaryHeader.should('be.visible');
+    }
+
     urlProductPage(){
         cy.visit('https://www.saucedemo.com/inventory.html');
     };
