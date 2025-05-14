@@ -159,5 +159,11 @@ export class ProductPage {
     verifyFilterSelected(Filter){
         this.filterProduct.contains(Filter)
     }
+    get openMenuIcon(){
+        return cy.get('[data-test="open-menu"]');
+    }
+    clickOpenMenuIcon(){
+        this.openMenuIcon.click();
+    }
 
 }
