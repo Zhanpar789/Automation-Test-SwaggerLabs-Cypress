@@ -3,7 +3,7 @@ export class ProductPage {
         return cy.get('[data-test="primary-header"]');
     }
     verifyPrimaryHeader(){
-        this.primaryHeader.should('be.visible');
+        this.primaryHeader.contains('Swag Labs').should('be.visible');
     }
 
     urlProductPage(){
