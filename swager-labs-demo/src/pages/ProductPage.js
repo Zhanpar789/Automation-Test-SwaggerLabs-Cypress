@@ -180,4 +180,11 @@ export class ProductPage {
         this.footer.should('be.visible');
     }
 
+    get footerCopyText(){
+        return cy.get('[data-test="footer-copy"]');
+    }
+    verifyFooterCopyText(){
+        this.footerCopyText.contains('Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy').should('be.visible');
+    }
+
 }
