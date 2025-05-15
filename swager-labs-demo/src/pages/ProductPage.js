@@ -173,4 +173,11 @@ export class ProductPage {
         this.openMenuIcon.click();
     }
 
+    get footer(){
+        return cy.get('[data-test="footer"]');
+    }
+    verifyFooter(){
+        this.footer.should('be.visible');
+    }
+
 }
