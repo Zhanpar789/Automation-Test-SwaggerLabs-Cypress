@@ -6,6 +6,13 @@ class ProductPage {
         this.primaryHeader.contains('Swag Labs').should('be.visible');
     }
 
+    get burgerButton(){
+        return cy.get('[class="bm-burger-button"]');
+    }
+    clickBurgerButton(){
+        this.burgerButton.click();
+    }
+
     urlProductPage(){
         cy.visit('https://www.saucedemo.com/inventory.html');
     };
