@@ -1,4 +1,4 @@
-export class ProductPage {
+class ProductPage {
     get primaryHeader(){
         return cy.get('[data-test="primary-header"]');
     }
@@ -192,6 +192,45 @@ export class ProductPage {
     }
     verifyFooterCopyText(){
         this.footerCopyText.contains('Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy').should('be.visible');
+    }
+
+}
+export default ProductPage;
+
+export class Sidebar{
+    get burgerButton(){
+        return cy.get('[class="bm-burger-button"]');
+    }
+    clickBurgerButton(){
+        this.burgerButton.click();
+    }
+
+    get allItemsSidebar(){
+        return cy.get('[id="inventory_sidebar_link"]');
+    }
+    clickAllItemsSidebar(){
+        this.allItemsSidebar.click();
+    }
+
+    get aboutSidebar(){
+        return cy.get('[id="about_sidebar_link"]');
+    }
+    clickAboutSidebar(){
+        this.aboutSidebar.click();
+    }
+
+    get logoutSidebar(){
+        return cy.get('[id="logout_sidebar_link"]');
+    }
+    clickLogoutSidebar(){
+        this.logoutSidebar.click();
+    }
+
+    get resetAppStateSidebar(){
+        return cy.get('[id="reset_sidebar_link"]');
+    }
+    clickResetAppStateSidebar(){
+        this.resetAppStateSidebar.click();
     }
 
 }
