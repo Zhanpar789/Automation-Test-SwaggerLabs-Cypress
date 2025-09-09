@@ -233,4 +233,11 @@ export class Sidebar{
         this.resetAppStateSidebar.click();
     }
 
+    get crossButton(){
+        return cy.get('[class="bm-cross-button"]');
+    }
+    clickCrossButton(){
+        this.crossButton.click();
+    }
+
 }
