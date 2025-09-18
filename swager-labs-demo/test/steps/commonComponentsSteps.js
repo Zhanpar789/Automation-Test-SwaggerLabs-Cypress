@@ -11,7 +11,7 @@ When('User click All Items Sidebar', () => {
     sidebar.clickAllItemsSidebar();
 });
 When('User click About Sidebar', () => {
-    sidebar.aboutSidebar();
+    sidebar.clickAboutSidebar();
 });
 When('User click Logout Sidebar', () => {
     sidebar.clickLogoutSidebar();
