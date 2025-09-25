@@ -10,13 +10,19 @@ When('User click Burger Button', () => {
 When('User click All Items Sidebar', () => {
     sidebar.clickAllItemsSidebar();
 });
+
 When('User click About Sidebar', () => {
-    sidebar.clickAboutSidebar();
+    sidebar.aboutSidebar();
 });
+
 When('User click Logout Sidebar', () => {
     sidebar.clickLogoutSidebar();
 });
+
 When('User click Reset App State Sidebar', () => {
     sidebar.clickResetAppStateSidebar();
 });
 
+When('User click cross Button', () => {
+    sidebar.clickCrossButton();
+});
