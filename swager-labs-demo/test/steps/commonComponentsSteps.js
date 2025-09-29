@@ -1,6 +1,7 @@
 import { When } from "@badeball/cypress-cucumber-preprocessor";
-import { Sidebar } from "../../src/pages/ProductPage";
+import ProductPage, { Sidebar } from "../../src/pages/ProductPage";
 
+const productPage = new ProductPage();
 const sidebar = new Sidebar();
 
 When('User click Burger Button', () => {
@@ -25,4 +26,8 @@ When('User click Reset App State Sidebar', () => {
 
 When('User click cross Button', () => {
     sidebar.clickCrossButton();
+});
+
+When('User click shooping cart Button', () => {
+    productPage.clickShoopingCartIcon();
 });
