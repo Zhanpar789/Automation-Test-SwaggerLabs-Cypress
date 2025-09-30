@@ -31,3 +31,7 @@ When('User click cross Button', () => {
 When('User click shooping cart Button', () => {
     productPage.clickShoopingCartIcon();
 });
+
+When('User click Sauce Labs Backpack', () => {
+    productPage.clickSauceLabsBackpack();
+});
