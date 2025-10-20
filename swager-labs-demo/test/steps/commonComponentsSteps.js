@@ -1,8 +1,13 @@
-import { When } from "@badeball/cypress-cucumber-preprocessor";
+import { Given, When } from "@badeball/cypress-cucumber-preprocessor";
 import ProductPage, { Sidebar } from "../../src/pages/ProductPage";
 
 const productPage = new ProductPage();
 const sidebar = new Sidebar();
+
+Given('User at inventory page', () => {
+    cy.visit(`${Cypress.env("sauce_demo")}`)
+    cy.wait(2000);
+});
 
 When('User click Burger Button', () => {
     sidebar.clickBurgerButton();
