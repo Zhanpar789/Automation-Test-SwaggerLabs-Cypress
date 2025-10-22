@@ -19,6 +19,21 @@ Feature: Login feature
     Scenario: User adds all products to cart 
         When User adds all products to cart
         Then User sees all products are added to cart
+
+
+    Scenario Outline: User adds "<product>" to cart on Detail Product
+        When User click detail product "<product>"
+        And User adds "<product>" to cart
+        Then User sees "<product>" is added to cart
+
+        Examples:
+        | product          |
+        | Backpack         |
+        | T-Shirt          |
+        | Bike Light       |
+        | Fleece Jacket    |
+        | Onesie           |
+        | T-Shirt Red      |
             
 
 

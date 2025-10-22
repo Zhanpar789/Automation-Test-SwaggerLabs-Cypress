@@ -37,6 +37,10 @@ class ProductPage {
         cy.get(`[data-test="add-to-cart-${testId}"]`).click();
     };
 
+    clickDetailProduct(NameProduct){
+        cy.get('[data-test="inventory-item-name"]').contains(NameProduct).click();
+    }
+
     removeOneOfProduct(productName){
         const testId = this.productData[productName];
         cy.get(`[data-test="remove-${testId}"]`).click();
