@@ -11,6 +11,12 @@ When('User adds {string} to cart', (productName) => {
     productPage.addToCart(productName);
 });
 
+When('User click detail product {string}', (productName) => {
+    cy.wait(1000)
+    productPage.clickDetailProduct(productName);
+    cy.wait(1000)
+});
+
 Then('User sees {string} is added to cart', (productName) => {
     productPage.verifyProductAdded(productName);
 });
