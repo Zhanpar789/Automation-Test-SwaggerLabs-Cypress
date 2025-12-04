@@ -5,4 +5,7 @@ export class YourInformation {
     get lastNameField(){
         return cy.get('[data-test="lastName"]')
     }
+    get postalCodeField(){
+        return cy.get('[data-test="postalCode"]')
+    }
 }
