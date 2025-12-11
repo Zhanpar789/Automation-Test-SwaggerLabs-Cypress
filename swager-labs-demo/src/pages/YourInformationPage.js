@@ -8,4 +8,7 @@ export class YourInformation {
     get postalCodeField(){
         return cy.get('[data-test="postalCode"]')
     }
+    get buttonCancel(){
+        return cy.get('[data-test="cancel"]')
+    }
 }
