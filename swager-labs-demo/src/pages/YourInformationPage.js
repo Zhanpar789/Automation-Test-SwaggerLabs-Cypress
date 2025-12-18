@@ -11,4 +11,7 @@ export class YourInformation {
     get buttonCancel(){
         return cy.get('[data-test="cancel"]')
     }
+    get buttonContinue(){
+        return cy.get('[data-test="continue"]')
+    }
 }
