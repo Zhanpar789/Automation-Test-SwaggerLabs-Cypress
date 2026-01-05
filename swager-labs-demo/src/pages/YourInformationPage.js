@@ -24,4 +24,7 @@ export class YourInformation {
     verifyValidationFirstName(){
         components.errorMessage.contains('Error: First Name is required').should('be.visible');
     }
+    verifyValidationLastName(){
+        components.errorMessage.contains('Error: Last Name is required').should('be.visible');
+    }
 }
