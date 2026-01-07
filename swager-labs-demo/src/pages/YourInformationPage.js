@@ -27,4 +27,7 @@ export class YourInformation {
     verifyValidationLastName(){
         components.errorMessage.contains('Error: Last Name is required').should('be.visible');
     }
+    verifyValidationPostalCode(){
+        components.errorMessage.contains('Error: Postal Code is required').should('be.visible');
+    }
 }
