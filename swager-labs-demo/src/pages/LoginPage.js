@@ -1,3 +1,6 @@
+import commonComponent from "../components/commonComponents";
+
+const components = new commonComponent(); 
 export class LoginPage {
     urlLoginPage(){
          cy.visit("https://www.saucedemo.com/");
@@ -54,5 +57,9 @@ export class LoginPage {
     }
     clickButtonLogin(){
         this.buttonLogin.click();
+    }
+
+    verifyValidationUsername(){
+         components.errorMessage.contains('Epic sadface: Username is required').should('be.visible');
     }
 }
