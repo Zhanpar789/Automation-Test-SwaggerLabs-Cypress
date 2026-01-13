@@ -62,4 +62,7 @@ export class LoginPage {
     verifyValidationUsername(){
          components.errorMessage.contains('Epic sadface: Username is required').should('be.visible');
     }
+    verifyValidationPassword(){
+         components.errorMessage.contains('Epic sadface: Password is required').should('be.visible');
+    }
 }
