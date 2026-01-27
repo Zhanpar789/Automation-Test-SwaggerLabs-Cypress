@@ -24,8 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-import { LoginPage } from "../../src/pages/LoginPage";
-import { ProductPage } from "../../src/pages/ProductPage";
+import { LoginPage } from "../../pages/LoginPage";
+import ProductPage from "../../pages/ProductPage";
 
 Cypress.Commands.add('login', () => {
   const loginPage = new LoginPage();
