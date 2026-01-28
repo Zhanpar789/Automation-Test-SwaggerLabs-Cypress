@@ -6,11 +6,14 @@ export class YourInformation {
     get firstNameField(){
         return cy.get('[data-test="firstName"]')
     }
-    inputFirstNameField(FirstName){
+    inputFirstName(FirstName){
         this.firstNameField.type(FirstName);
     }
     get lastNameField(){
         return cy.get('[data-test="lastName"]')
+    }
+    inputLastName(lastName){
+        this.lastNameField.type(lastName);
     }
     get postalCodeField(){
         return cy.get('[data-test="postalCode"]')
