@@ -29,4 +29,7 @@ export class YourCartPage {
     clickButtonCheckout(){
         this.buttonCheckout.click();
     }
+    get buttonFinish(){
+        return cy.get('[data-test="finish"]');
+    }
 }
