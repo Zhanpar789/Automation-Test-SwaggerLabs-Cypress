@@ -32,4 +32,7 @@ export class YourCartPage {
     get buttonFinish(){
         return cy.get('[data-test="finish"]');
     }
+    clickButtonFinish(){
+        this.buttonFinish.click();
+    }
 }
